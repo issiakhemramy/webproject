@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <title>Exemple d'icône avec lien</title>
+      <style>
+        .icon {
+          width: 50px; /* Ajustez la taille de l'icône selon vos besoins */
+          height: 50px;
+          position: fixed;
+          top: 5px; /* Ajustez la position verticale selon vos besoins */
+          right: 5px; /* Ajustez la position horizontale selon vos besoins */
+          background-color: #0ff;
+          mix-blend-mode: lighten;
+        }
+      </style>
+    </head>
+    <body>
+      <a href="autre-page.html">
+        <img src="96782409-a-house-icon-white-icon-with-shadow-on-transparent-background.webp" alt="Icône" class="icon" />
+      </a>
+    </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Electric')">
+          Electric
+        </button>
+        <button class="button-value" onclick="filterProduct('Jazz')">
+          Jazz
+        </button>
+        <button class="button-value" onclick="filterProduct('Classical')">
+          Classical
+        </button>
+        <button class="button-value" onclick="filterProduct('Acoustic')">
+          Acoustic
+        </button>
+        <button class="button-value" onclick="filterProduct('Flamenco')">
+          Flamenco
+          </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+   
+    <script src="index.js"></script>
+  </body>
+  
+</html>
